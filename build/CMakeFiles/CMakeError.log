@@ -1,0 +1,156 @@
+Determining if the Q_WS_X11 exist failed with the following output:
+Change Dir: C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec167929192.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Microsoft (R) Build Engine version 4.6.79.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 5/4/2016 8:48:45 PM.
+Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec167929192.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec167929192.dir\Debug\".
+  Creating directory "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec167929192.dir\Debug\cmTryCompileExec167929192.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec167929192.dir\Debug\\" /Fd"cmTryCompileExec167929192.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec167929192.dir\Debug\\" /Fd"cmTryCompileExec167929192.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+CheckSymbolExists.cxx(8): error C2065: 'Q_WS_X11' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec167929192.vcxproj]
+Done Building Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec167929192.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec167929192.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckSymbolExists.cxx(8): error C2065: 'Q_WS_X11' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec167929192.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.20
+
+File C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3577036414.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Microsoft (R) Build Engine version 4.6.79.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 5/4/2016 8:48:47 PM.
+Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec3577036414.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3577036414.dir\Debug\".
+  Creating directory "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3577036414.dir\Debug\cmTryCompileExec3577036414.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3577036414.dir\Debug\\" /Fd"cmTryCompileExec3577036414.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3577036414.dir\Debug\\" /Fd"cmTryCompileExec3577036414.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+CheckSymbolExists.cxx(8): error C2065: 'Q_WS_QWS' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec3577036414.vcxproj]
+Done Building Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec3577036414.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec3577036414.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckSymbolExists.cxx(8): error C2065: 'Q_WS_QWS' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec3577036414.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.19
+
+File C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1814068188.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Microsoft (R) Build Engine version 4.6.79.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 5/4/2016 8:48:47 PM.
+Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec1814068188.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1814068188.dir\Debug\".
+  Creating directory "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1814068188.dir\Debug\cmTryCompileExec1814068188.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1814068188.dir\Debug\\" /Fd"cmTryCompileExec1814068188.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /IC:\Qt\4.8.6\include /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1814068188.dir\Debug\\" /Fd"cmTryCompileExec1814068188.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue CheckSymbolExists.cxx
+  
+  CheckSymbolExists.cxx
+CheckSymbolExists.cxx(8): error C2065: 'Q_WS_MAC' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec1814068188.vcxproj]
+Done Building Project "C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec1814068188.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec1814068188.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  CheckSymbolExists.cxx(8): error C2065: 'Q_WS_MAC' : undeclared identifier [C:\Users\jperdomo\Downloads\RenderWindowUISingleInheritance\build\CMakeFiles\CMakeTmp\cmTryCompileExec1814068188.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.20
+
+File C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

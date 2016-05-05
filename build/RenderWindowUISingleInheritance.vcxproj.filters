@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\RenderWindowUISingleInheritance.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RenderWindowUISingleInheritanceDriver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="moc_RenderWindowUISingleInheritance.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_RenderWindowUISingleInheritance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt" />
+    <CustomBuild Include="..\RenderWindowUISingleInheritance.ui" />
+    <CustomBuild Include="CMakeFiles\5f817266e3cd011a742bf11be7b1eb64\moc_RenderWindowUISingleInheritance.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A5171EDF-9F6C-494C-958C-2C3453622FB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6228D9FD-2058-4F06-8289-E421757135E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45C9B428-8EBA-4CDC-ACCB-C915086F7F69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

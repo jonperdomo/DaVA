@@ -1,5 +1,2 @@
 # HeelStats
-## Goal
-Creating an application for visualizing textual and graphical data in images and volumes.
-### Dependencies
-This application currently uses Qt for creating the user interface, and VTK for data visualization and analysis.
+Application for displaying statistical information from volume and image data. Developed with VTK and Qt for Windows.

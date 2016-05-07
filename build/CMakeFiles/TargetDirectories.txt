@@ -1,3 +1,3 @@
-C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/RenderWindowUISingleInheritance.dir
-C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/HeelStats.dir
+C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/ZERO_CHECK.dir

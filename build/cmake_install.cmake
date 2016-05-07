@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance
+# Install script for directory: C:/Users/jperdomo/code/HeelStats
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/RenderWindowUISingleInheritance")
+  SET(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/HeelStats")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,7 +33,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "C:/Users/jperdomo/code/HeelStats/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "C:/Users/jperdomo/Downloads/RenderWindowUISingleInheritance/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "C:/Users/jperdomo/code/HeelStats/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

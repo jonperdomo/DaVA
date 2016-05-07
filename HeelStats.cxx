@@ -1,8 +1,8 @@
-#include "RenderWindowUISingleInheritance.h"
+#include "HeelStats.h"
 
 // This is included here because it is forward declared in
-// RenderWindowUISingleInheritance.h
-#include "ui_RenderWindowUISingleInheritance.h"
+// HeelStats.h
+#include "ui_HeelStats.h"
 
 #include <vtkPolyDataMapper.h>
 #include <vtkRenderer.h>
@@ -11,9 +11,9 @@
 #include <vtkSmartPointer.h>
  
 // Constructor
-RenderWindowUISingleInheritance::RenderWindowUISingleInheritance() 
+HeelStats::HeelStats() 
 {
-  this->ui = new Ui_RenderWindowUISingleInheritance;
+  this->ui = new Ui_HeelStats;
   this->ui->setupUi(this);
  
   // Sphere
@@ -37,7 +37,7 @@ RenderWindowUISingleInheritance::RenderWindowUISingleInheritance()
  
 }
  
-void RenderWindowUISingleInheritance::slotExit() 
+void HeelStats::slotExit() 
 {
   qApp->exit();
 }

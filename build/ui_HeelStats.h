@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'RenderWindowUISingleInheritance.ui'
+** Form generated from reading UI file 'HeelStats.ui'
 **
 ** Created by: Qt User Interface Compiler version 4.8.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_RENDERWINDOWUISINGLEINHERITANCE_H
-#define UI_RENDERWINDOWUISINGLEINHERITANCE_H
+#ifndef UI_HEELSTATS_H
+#define UI_HEELSTATS_H
 
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
@@ -28,7 +28,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_RenderWindowUISingleInheritance
+class Ui_HeelStats
 {
 public:
     QAction *actionOpen_Data_Set;
@@ -44,14 +44,14 @@ public:
     QMenu *menuFile;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *RenderWindowUISingleInheritance)
+    void setupUi(QMainWindow *HeelStats)
     {
-        if (RenderWindowUISingleInheritance->objectName().isEmpty())
-            RenderWindowUISingleInheritance->setObjectName(QString::fromUtf8("RenderWindowUISingleInheritance"));
-        RenderWindowUISingleInheritance->resize(860, 604);
-        actionOpen_Data_Set = new QAction(RenderWindowUISingleInheritance);
+        if (HeelStats->objectName().isEmpty())
+            HeelStats->setObjectName(QString::fromUtf8("HeelStats"));
+        HeelStats->resize(860, 604);
+        actionOpen_Data_Set = new QAction(HeelStats);
         actionOpen_Data_Set->setObjectName(QString::fromUtf8("actionOpen_Data_Set"));
-        centralwidget = new QWidget(RenderWindowUISingleInheritance);
+        centralwidget = new QWidget(HeelStats);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         horizontalLayout_2 = new QHBoxLayout(centralwidget);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
@@ -90,39 +90,39 @@ public:
 
         horizontalLayout_2->addLayout(horizontalLayout);
 
-        RenderWindowUISingleInheritance->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(RenderWindowUISingleInheritance);
+        HeelStats->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(HeelStats);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 860, 21));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
-        RenderWindowUISingleInheritance->setMenuBar(menubar);
-        statusbar = new QStatusBar(RenderWindowUISingleInheritance);
+        HeelStats->setMenuBar(menubar);
+        statusbar = new QStatusBar(HeelStats);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        RenderWindowUISingleInheritance->setStatusBar(statusbar);
+        HeelStats->setStatusBar(statusbar);
 
         menubar->addAction(menuFile->menuAction());
         menuFile->addAction(actionOpen_Data_Set);
 
-        retranslateUi(RenderWindowUISingleInheritance);
+        retranslateUi(HeelStats);
 
-        QMetaObject::connectSlotsByName(RenderWindowUISingleInheritance);
+        QMetaObject::connectSlotsByName(HeelStats);
     } // setupUi
 
-    void retranslateUi(QMainWindow *RenderWindowUISingleInheritance)
+    void retranslateUi(QMainWindow *HeelStats)
     {
-        RenderWindowUISingleInheritance->setWindowTitle(QApplication::translate("RenderWindowUISingleInheritance", "HeelStat", 0, QApplication::UnicodeUTF8));
-        actionOpen_Data_Set->setText(QApplication::translate("RenderWindowUISingleInheritance", "Open Data Set", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("RenderWindowUISingleInheritance", "Show Data Set", 0, QApplication::UnicodeUTF8));
-        menuFile->setTitle(QApplication::translate("RenderWindowUISingleInheritance", "File", 0, QApplication::UnicodeUTF8));
+        HeelStats->setWindowTitle(QApplication::translate("HeelStats", "HeelStat", 0, QApplication::UnicodeUTF8));
+        actionOpen_Data_Set->setText(QApplication::translate("HeelStats", "Open Data Set", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("HeelStats", "Show Data Set", 0, QApplication::UnicodeUTF8));
+        menuFile->setTitle(QApplication::translate("HeelStats", "File", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class RenderWindowUISingleInheritance: public Ui_RenderWindowUISingleInheritance {};
+    class HeelStats: public Ui_HeelStats {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_RENDERWINDOWUISINGLEINHERITANCE_H
+#endif // UI_HEELSTATS_H

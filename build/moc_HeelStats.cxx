@@ -1,14 +1,14 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'RenderWindowUISingleInheritance.h'
+** Meta object code from reading C++ file 'HeelStats.h'
 **
 ** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../RenderWindowUISingleInheritance.h"
+#include "../HeelStats.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'RenderWindowUISingleInheritance.h' doesn't include <QObject>."
+#error "The header file 'HeelStats.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 63
 #error "This file was generated using the moc from 4.8.6. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -16,7 +16,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_RenderWindowUISingleInheritance[] = {
+static const uint qt_meta_data_HeelStats[] = {
 
  // content:
        6,       // revision
@@ -30,21 +30,20 @@ static const uint qt_meta_data_RenderWindowUISingleInheritance[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      33,   32,   32,   32, 0x0a,
+      11,   10,   10,   10, 0x0a,
 
        0        // eod
 };
 
-static const char qt_meta_stringdata_RenderWindowUISingleInheritance[] = {
-    "RenderWindowUISingleInheritance\0\0"
-    "slotExit()\0"
+static const char qt_meta_stringdata_HeelStats[] = {
+    "HeelStats\0\0slotExit()\0"
 };
 
-void RenderWindowUISingleInheritance::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void HeelStats::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         Q_ASSERT(staticMetaObject.cast(_o));
-        RenderWindowUISingleInheritance *_t = static_cast<RenderWindowUISingleInheritance *>(_o);
+        HeelStats *_t = static_cast<HeelStats *>(_o);
         switch (_id) {
         case 0: _t->slotExit(); break;
         default: ;
@@ -53,33 +52,33 @@ void RenderWindowUISingleInheritance::qt_static_metacall(QObject *_o, QMetaObjec
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData RenderWindowUISingleInheritance::staticMetaObjectExtraData = {
+const QMetaObjectExtraData HeelStats::staticMetaObjectExtraData = {
     0,  qt_static_metacall 
 };
 
-const QMetaObject RenderWindowUISingleInheritance::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_RenderWindowUISingleInheritance,
-      qt_meta_data_RenderWindowUISingleInheritance, &staticMetaObjectExtraData }
+const QMetaObject HeelStats::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_HeelStats,
+      qt_meta_data_HeelStats, &staticMetaObjectExtraData }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &RenderWindowUISingleInheritance::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &HeelStats::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *RenderWindowUISingleInheritance::metaObject() const
+const QMetaObject *HeelStats::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *RenderWindowUISingleInheritance::qt_metacast(const char *_clname)
+void *HeelStats::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_RenderWindowUISingleInheritance))
-        return static_cast<void*>(const_cast< RenderWindowUISingleInheritance*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_HeelStats))
+        return static_cast<void*>(const_cast< HeelStats*>(this));
     return QMainWindow::qt_metacast(_clname);
 }
 
-int RenderWindowUISingleInheritance::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int HeelStats::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)

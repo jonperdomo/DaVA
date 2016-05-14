@@ -12,6 +12,7 @@
 //
 #include <string>
 #include <iostream>
+#include <QFileDialog>
 using namespace std;
  
 // Constructor
@@ -52,7 +53,8 @@ void HeelStats::pushButtonClicked()
 
 void HeelStats::openDataSet()
 {
-  cout << "Data set opened" << endl;
+  QFileDialog::getOpenFileName(this, tr("Open Local Data Set"), "C:/Users/jperdomo", tr("CXX files (*.cxx)") );
+  //cout << "Data set opened: " << fileName << endl;
 }
 
 void HeelStats::slotExit()

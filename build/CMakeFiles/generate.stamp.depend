@@ -1,6 +1,5 @@
 # CMake generation dependency list for this directory.
 C:/Users/jperdomo/code/HeelStats/CMakeLists.txt
-C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeVS10FindMake.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeDetermineSystem.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeSystem.cmake.in
 C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/2.8.12.2/CMakeSystem.cmake
@@ -181,10 +180,6 @@ C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/MacroAddFileDependencie
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
-C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeConfigurableFile.in
-C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeConfigurableFile.in
-C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeConfigurableFile.in
-C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeConfigurableFile.in
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Qt4ConfigDependentSettings.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Qt4Macros.cmake
 C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/UseQt4.cmake

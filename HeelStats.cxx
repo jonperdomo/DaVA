@@ -9,6 +9,10 @@
 #include <vtkRenderWindow.h>
 #include <vtkSphereSource.h>
 #include <vtkSmartPointer.h>
+//
+#include <string>
+#include <iostream>
+using namespace std;
  
 // Constructor
 HeelStats::HeelStats() 
@@ -34,10 +38,24 @@ HeelStats::HeelStats()
  
   // VTK/Qt wedded
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
- 
+
+  // Signal for opening file
+  connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
+
+  connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
 }
- 
-void HeelStats::slotExit() 
+
+void HeelStats::pushButtonClicked()
+{
+	cout << "Hello world" << endl;
+}
+
+void HeelStats::openDataSet()
+{
+  cout << "Data set opened" << endl;
+}
+
+void HeelStats::slotExit()
 {
   qApp->exit();
 }

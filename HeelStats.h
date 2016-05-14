@@ -20,6 +20,8 @@ public:
 public slots:
  
   virtual void slotExit();
+  virtual void pushButtonClicked();
+  virtual void openDataSet();
 
 private:
  

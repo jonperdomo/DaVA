@@ -25,13 +25,13 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{C2EB7A41-723C-4DD9-A079-0BFF0965221A}</UniqueIdentifier>
+      <UniqueIdentifier>{16F0D428-02AC-4CFB-B233-26B56B3FB668}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{BBFCAFDB-4746-402C-AE63-FDB1F7E06EC3}</UniqueIdentifier>
+      <UniqueIdentifier>{BFD329E3-5B83-4899-ADE9-9CDED4E148BE}</UniqueIdentifier>
     </Filter>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{69F8BC71-8FEA-48E4-9BF7-0C4B862D636B}</UniqueIdentifier>
+      <UniqueIdentifier>{13238C56-E735-4998-B1CB-3F8E47EB1D1A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

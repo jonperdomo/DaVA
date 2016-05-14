@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{2A04667F-8BBF-4977-9645-AD09D8D529B5}</ProjectGUID>
+    <ProjectGUID>{B9059918-EF1E-4121-99A0-34E4DDEC7A76}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -199,10 +199,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/jperdomo/code/HeelStats/build/HeelStats.vcxproj">
-      <Project>ABD050BE-1D0A-4D1E-AA3A-75DF89D1CA45</Project>
+      <Project>087DFCAD-B7F4-4637-822E-F0D63DE4CD38</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/jperdomo/code/HeelStats/build/ZERO_CHECK.vcxproj">
-      <Project>C9C9D8AE-893E-48BF-8B76-C3A0C6EB228C</Project>
+      <Project>53655023-CFAD-4085-A144-66910E53FE3D</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

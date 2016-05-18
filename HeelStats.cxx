@@ -14,6 +14,10 @@
 #include <iostream>
 #include <QFileDialog>
 #include <QString>
+//
+#include <vtkImageViewer2.h>
+#include <vtkDICOMImageReader.h>
+#include <vtkRenderWindowInteractor.h>
 
 using namespace std;
  
@@ -33,19 +37,19 @@ HeelStats::HeelStats()
   vtkSmartPointer<vtkActor> sphereActor = 
       vtkSmartPointer<vtkActor>::New();
   sphereActor->SetMapper(sphereMapper);
- 
+  /*
   // VTK Renderer
   vtkSmartPointer<vtkRenderer> renderer = 
       vtkSmartPointer<vtkRenderer>::New();
   renderer->AddActor(sphereActor);
- 
-  // VTK/Qt wedded
+    // VTK/Qt wedded
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
-
+  */
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
   connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
+  
 }
 
 void HeelStats::pushButtonClicked()
@@ -56,8 +60,49 @@ void HeelStats::pushButtonClicked()
 void HeelStats::openDataSet()
 {
   QString fileName;
-  fileName = QFileDialog::getOpenFileName(this, tr("Open Local Data Set"), "C:/Users/jperdomo", tr("CXX files (*.cxx)") );
-  cout << "Data set opened: " << fileName.toStdString() << endl;
+  fileName = QFileDialog::getExistingDirectory( this, tr("Open Local Data Set"), "C:/Users/jperdomo", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks );
+  // Convert QString to std::string
+  std::string fileStd = fileName.toStdString();
+  cout << "Data set opened: " << fileStd << endl;
+
+  const char * fileChar = fileStd.c_str();
+  
+  // Read data set
+  vtkSmartPointer<vtkDICOMImageReader> reader =
+    vtkSmartPointer<vtkDICOMImageReader>::New();
+  reader->SetDirectoryName( fileChar );
+  reader->Update();
+
+  //Visualize
+  /*
+  vtkSmartPointer<vtkRenderer> renderer = 
+      vtkSmartPointer<vtkRenderer>::New();
+
+  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
+  */
+  // Image viewer
+  vtkSmartPointer<vtkImageViewer2> imageViewer =
+    vtkSmartPointer<vtkImageViewer2>::New();
+  imageViewer->SetInputConnection( reader->GetOutputPort() );
+
+  this->ui->qvtkWidget->SetRenderWindow( imageViewer->GetRenderWindow() );
+  imageViewer->Render();
+
+  /*
+    // Map to volume
+  vtkSmartPointer<vtkOpenGLGPUVolumeRayCastMapper> volumeMapper;
+  volumeMapper->SetInputConnection( mi->GetOutputPort() );
+
+  // Create volume
+  vtkSmartPointer<vtkVolume> volume;
+  volume->SetMapper( volumeMapper.GetPointer() );
+
+  // Render
+  vtkSmartPointer<vtkRenderer> renderer = 
+      vtkSmartPointer<vtkRenderer>::New();
+  renderer->AddVolume( volume.GetPointer() );
+  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
+  */
 }
 
 void HeelStats::slotExit()

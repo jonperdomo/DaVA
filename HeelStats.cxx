@@ -18,6 +18,7 @@
 #include <vtkImageViewer2.h>
 #include <vtkDICOMImageReader.h>
 #include <vtkRenderWindowInteractor.h>
+#include <vtkInteractorStyleImage.h>
 
 using namespace std;
  
@@ -48,7 +49,7 @@ HeelStats::HeelStats()
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
-  connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
+  connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );  
   
 }
 
@@ -69,7 +70,7 @@ void HeelStats::openDataSet()
   
   // Read data set
   vtkSmartPointer<vtkDICOMImageReader> reader =
-    vtkSmartPointer<vtkDICOMImageReader>::New();
+      vtkSmartPointer<vtkDICOMImageReader>::New();
   reader->SetDirectoryName( fileChar );
   reader->Update();
 
@@ -80,13 +81,34 @@ void HeelStats::openDataSet()
 
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
   */
+
+
+  // Image style interactor for flipping through slices
+  // Make own class where I create one
+
+
   // Image viewer
   vtkSmartPointer<vtkImageViewer2> imageViewer =
-    vtkSmartPointer<vtkImageViewer2>::New();
+      vtkSmartPointer<vtkImageViewer2>::New();
   imageViewer->SetInputConnection( reader->GetOutputPort() );
 
   this->ui->qvtkWidget->SetRenderWindow( imageViewer->GetRenderWindow() );
+
+  // Add signal to interactor for flipping slices
+  vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
+
+  vtkSmartPointer<vtkInteractorStyleImage> interactorStyle =
+      vtkSmartPointer<vtkInteractorStyleImage>::New();
+
+  //interactorStyle->SetImageViewer( imageViewer );
+
+  imageViewer->SetupInteractor( interactor );
+
+  interactor->SetInteractorStyle( interactorStyle );
+
+  // Render image
   imageViewer->Render();
+  //interactor->Start();
 
   /*
     // Map to volume

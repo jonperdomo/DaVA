@@ -50,11 +50,12 @@ HeelStats::HeelStats()
   //Set Image Viewer
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
 
+  interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
+
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
   connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
-  
 }
 
 void HeelStats::pushButtonClicked()
@@ -94,13 +95,14 @@ void HeelStats::openDataSet()
   // Set input to ImageViewer
   imageViewer->SetInputConnection( reader->GetOutputPort() );
 
+  
   this->ui->qvtkWidget->SetRenderWindow( imageViewer->GetRenderWindow() );
 
   // Add signal to interactor for flipping slices
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
 
-  vtkSmartPointer<vtkInteractorStyleImage> interactorStyle =
-      vtkSmartPointer<vtkInteractorStyleImage>::New();
+  //vtkSmartPointer<vtkInteractorStyleImage> interactorStyle =
+      //vtkSmartPointer<vtkInteractorStyleImage>::New();
 
   //interactorStyle->SetImageViewer( imageViewer );
 

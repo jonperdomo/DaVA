@@ -10,7 +10,7 @@ Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:30 AM.
+Build started 5/22/2016 1:22:14 AM.
 Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -37,7 +37,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.34
+Time Elapsed 00:00:00.36
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -57,7 +57,7 @@ Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:30 AM.
+Build started 5/22/2016 1:22:15 AM.
 Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -84,7 +84,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.35
+Time Elapsed 00:00:00.36
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -96,188 +96,188 @@ The CXX compiler identification is MSVC, found in "C:/Users/jperdomo/code/HeelSt
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3003345185.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec797812148.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
 Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:30 AM.
-Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec3003345185.vcxproj" on node 1 (default targets).
+Build started 5/22/2016 1:22:15 AM.
+Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec797812148.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec3003345185.dir\Debug\".
+  Creating directory "cmTryCompileExec797812148.dir\Debug\".
   Creating directory "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3003345185.dir\Debug\\" /Fd"cmTryCompileExec3003345185.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec797812148.dir\Debug\\" /Fd"cmTryCompileExec797812148.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3003345185.dir\Debug\\" /Fd"cmTryCompileExec3003345185.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec797812148.dir\Debug\\" /Fd"cmTryCompileExec797812148.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
   
   testCCompiler.c
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.embed.manifest.res" cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.embed.manifest.res" cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148_manifest.rc 
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3003345185.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3003345185.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3003345185.lib" /MACHINE:X86 cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.embed.manifest.res
-  cmTryCompileExec3003345185.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec797812148.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec797812148.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec797812148.lib" /MACHINE:X86 cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.embed.manifest.res
+  cmTryCompileExec797812148.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.embed.manifest" /manifest cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.embed.manifest.res" cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.embed.manifest" /manifest cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.embed.manifest.res" cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148_manifest.rc 
 LinkEmbedManifest:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3003345185.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3003345185.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3003345185.lib" /MACHINE:X86 cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.exe.embed.manifest.res
-  cmTryCompileExec3003345185.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
-  cmTryCompileExec3003345185.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3003345185.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec797812148.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec797812148.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec797812148.lib" /MACHINE:X86 cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.exe.embed.manifest.res
+  cmTryCompileExec797812148.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec797812148.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec797812148.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.unsuccessfulbuild".
-  Touching "cmTryCompileExec3003345185.dir\Debug\cmTryCompileExec3003345185.lastbuildstate".
-Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec3003345185.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.unsuccessfulbuild".
+  Touching "cmTryCompileExec797812148.dir\Debug\cmTryCompileExec797812148.lastbuildstate".
+Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec797812148.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.82
+Time Elapsed 00:00:00.72
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1309025370.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec643710929.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
 Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:31 AM.
-Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1309025370.vcxproj" on node 1 (default targets).
+Build started 5/22/2016 1:22:16 AM.
+Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec643710929.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec1309025370.dir\Debug\".
+  Creating directory "cmTryCompileExec643710929.dir\Debug\".
   Creating directory "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1309025370.dir\Debug\\" /Fd"cmTryCompileExec1309025370.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec643710929.dir\Debug\\" /Fd"cmTryCompileExec643710929.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1309025370.dir\Debug\\" /Fd"cmTryCompileExec1309025370.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec643710929.dir\Debug\\" /Fd"cmTryCompileExec643710929.dir\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.embed.manifest.res" cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.embed.manifest.res" cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929_manifest.rc 
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1309025370.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1309025370.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1309025370.lib" /MACHINE:X86 cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.embed.manifest.res
-  cmTryCompileExec1309025370.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec643710929.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec643710929.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec643710929.lib" /MACHINE:X86 cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.embed.manifest.res
+  cmTryCompileExec643710929.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.embed.manifest" /manifest cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.embed.manifest.res" cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.embed.manifest" /manifest cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.embed.manifest.res" cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929_manifest.rc 
 LinkEmbedManifest:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1309025370.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1309025370.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1309025370.lib" /MACHINE:X86 cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.exe.embed.manifest.res
-  cmTryCompileExec1309025370.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
-  cmTryCompileExec1309025370.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1309025370.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec643710929.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec643710929.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec643710929.lib" /MACHINE:X86 cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.exe.embed.manifest.res
+  cmTryCompileExec643710929.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec643710929.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec643710929.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.unsuccessfulbuild".
-  Touching "cmTryCompileExec1309025370.dir\Debug\cmTryCompileExec1309025370.lastbuildstate".
-Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1309025370.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.unsuccessfulbuild".
+  Touching "cmTryCompileExec643710929.dir\Debug\cmTryCompileExec643710929.lastbuildstate".
+Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec643710929.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.86
+Time Elapsed 00:00:00.74
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1529696186.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1826552152.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
 Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:32 AM.
-Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1529696186.vcxproj" on node 1 (default targets).
+Build started 5/22/2016 1:22:17 AM.
+Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1826552152.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec1529696186.dir\Debug\".
+  Creating directory "cmTryCompileExec1826552152.dir\Debug\".
   Creating directory "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1529696186.dir\Debug\\" /Fd"cmTryCompileExec1529696186.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1826552152.dir\Debug\\" /Fd"cmTryCompileExec1826552152.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1529696186.dir\Debug\\" /Fd"cmTryCompileExec1529696186.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1826552152.dir\Debug\\" /Fd"cmTryCompileExec1826552152.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.embed.manifest.res" cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.embed.manifest.res" cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152_manifest.rc 
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1529696186.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1529696186.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1529696186.lib" /MACHINE:X86 cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.embed.manifest.res
-  cmTryCompileExec1529696186.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1826552152.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1826552152.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1826552152.lib" /MACHINE:X86 cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.embed.manifest.res
+  cmTryCompileExec1826552152.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.embed.manifest" /manifest cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.embed.manifest.res" cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.embed.manifest" /manifest cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.embed.manifest.res" cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152_manifest.rc 
 LinkEmbedManifest:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1529696186.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1529696186.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1529696186.lib" /MACHINE:X86 cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.exe.embed.manifest.res
-  cmTryCompileExec1529696186.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
-  cmTryCompileExec1529696186.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1529696186.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1826552152.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1826552152.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1826552152.lib" /MACHINE:X86 cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.exe.embed.manifest.res
+  cmTryCompileExec1826552152.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec1826552152.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1826552152.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.unsuccessfulbuild".
-  Touching "cmTryCompileExec1529696186.dir\Debug\cmTryCompileExec1529696186.lastbuildstate".
-Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1529696186.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.unsuccessfulbuild".
+  Touching "cmTryCompileExec1826552152.dir\Debug\cmTryCompileExec1826552152.lastbuildstate".
+Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec1826552152.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.81
+Time Elapsed 00:00:00.70
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp
 
-Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3851152708.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec987083578.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=10.0
 Microsoft (R) Build Engine version 4.6.1038.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 5/22/2016 12:14:33 AM.
-Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec3851152708.vcxproj" on node 1 (default targets).
+Build started 5/22/2016 1:22:18 AM.
+Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec987083578.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTryCompileExec3851152708.dir\Debug\".
+  Creating directory "cmTryCompileExec987083578.dir\Debug\".
   Creating directory "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\".
 InitializeBuildStatus:
-  Creating "cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3851152708.dir\Debug\\" /Fd"cmTryCompileExec3851152708.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec987083578.dir\Debug\\" /Fd"cmTryCompileExec987083578.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.30319.01 for 80x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3851152708.dir\Debug\\" /Fd"cmTryCompileExec3851152708.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec987083578.dir\Debug\\" /Fd"cmTryCompileExec987083578.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:queue "..\..\..\..\..\..\..\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 ManifestResourceCompile:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.embed.manifest.res" cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.embed.manifest.res" cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578_manifest.rc 
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3851152708.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3851152708.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3851152708.lib" /MACHINE:X86 cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.embed.manifest.res
-  cmTryCompileExec3851152708.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec987083578.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec987083578.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec987083578.lib" /MACHINE:X86 cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.embed.manifest.res
+  cmTryCompileExec987083578.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
 Manifest:
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.embed.manifest" /manifest cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.intermediate.manifest
-  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.embed.manifest.res" cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708_manifest.rc 
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.embed.manifest" /manifest cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.embed.manifest.res" cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578_manifest.rc 
 LinkEmbedManifest:
-  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3851152708.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3851152708.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3851152708.lib" /MACHINE:X86 cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.exe.embed.manifest.res
-  cmTryCompileExec3851152708.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
-  cmTryCompileExec3851152708.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3851152708.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec987083578.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec987083578.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec987083578.lib" /MACHINE:X86 cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.exe.embed.manifest.res
+  cmTryCompileExec987083578.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec987083578.vcxproj -> C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec987083578.exe
 FinalizeBuildStatus:
-  Deleting file "cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.unsuccessfulbuild".
-  Touching "cmTryCompileExec3851152708.dir\Debug\cmTryCompileExec3851152708.lastbuildstate".
-Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec3851152708.vcxproj" (default targets).
+  Deleting file "cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.unsuccessfulbuild".
+  Touching "cmTryCompileExec987083578.dir\Debug\cmTryCompileExec987083578.lastbuildstate".
+Done Building Project "C:\Users\jperdomo\code\HeelStats\build\CMakeFiles\CMakeTmp\cmTryCompileExec987083578.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.84
+Time Elapsed 00:00:00.77
 
 

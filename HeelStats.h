@@ -4,6 +4,9 @@
 #include <vtkSmartPointer.h>
 
 #include <QMainWindow>
+
+// Image viewer class
+#include <vtkImageViewer2.h>
  
 // Forward Qt class declarations
 class Ui_HeelStats;
@@ -24,9 +27,11 @@ public slots:
   virtual void openDataSet();
 
 private:
- 
   // Designer form
   Ui_HeelStats *ui;
+
+  // Image viewer
+	vtkSmartPointer<vtkImageViewer2> imageViewer;
 };
  
 #endif

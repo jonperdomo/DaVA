@@ -46,10 +46,14 @@ HeelStats::HeelStats()
     // VTK/Qt wedded
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
   */
+
+  //Set Image Viewer
+  imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
+
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
-  connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );  
+  connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
   
 }
 
@@ -87,9 +91,7 @@ void HeelStats::openDataSet()
   // Make own class where I create one
 
 
-  // Image viewer
-  vtkSmartPointer<vtkImageViewer2> imageViewer =
-      vtkSmartPointer<vtkImageViewer2>::New();
+  // Set input to ImageViewer
   imageViewer->SetInputConnection( reader->GetOutputPort() );
 
   this->ui->qvtkWidget->SetRenderWindow( imageViewer->GetRenderWindow() );

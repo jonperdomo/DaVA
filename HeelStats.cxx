@@ -44,13 +44,19 @@ HeelStats::HeelStats()
       vtkSmartPointer<vtkRenderer>::New();
   renderer->AddActor(sphereActor);
     // VTK/Qt wedded
-  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
   */
 
-  //Set Image Viewer
+  //Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
-
   interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
+
+  // Add renderer
+  vtkSmartPointer<vtkRenderer> renderer = 
+      vtkSmartPointer<vtkRenderer>::New();
+  renderer->SetBackground( 0, 0, 0 );
+
+  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer( renderer );
+
 
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );

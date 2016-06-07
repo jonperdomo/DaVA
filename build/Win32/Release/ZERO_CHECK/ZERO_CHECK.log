@@ -1,4 +1,4 @@
-﻿Build started 6/7/2016 12:54:24 AM.
+﻿Build started 6/7/2016 12:55:54 AM.
      1>Project "C:\Users\jperdomo\code\HeelStats\build\ZERO_CHECK.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -9,4 +9,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.05
+Time Elapsed 00:00:00.04

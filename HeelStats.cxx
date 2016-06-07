@@ -19,34 +19,97 @@
 #include <vtkDICOMImageReader.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkInteractorStyleImage.h>
+#include <vtkCommand.h>
+#include <vtkObjectFactory.h>
 
 using namespace std;
  
+// Define own interaction style
+class myVtkInteractorStyleImage : public vtkInteractorStyleImage
+{
+public:
+   static myVtkInteractorStyleImage* New();
+   vtkTypeMacro(myVtkInteractorStyleImage, vtkInteractorStyleImage);
+ 
+protected:
+   vtkImageViewer2* _ImageViewer;
+   int _Slice;
+   int _MinSlice;
+   int _MaxSlice;
+ 
+public:
+   void SetImageViewer(vtkImageViewer2* imageViewer) {
+      _ImageViewer = imageViewer;
+      _MinSlice = imageViewer->GetSliceMin();
+      _MaxSlice = imageViewer->GetSliceMax();
+      _Slice = _MinSlice;
+      cout << "Slicer: Min = " << _MinSlice << ", Max = " << _MaxSlice << std::endl;
+   }
+ 
+protected:
+   void MoveSliceForward() {
+      if(_Slice < _MaxSlice) {
+         _Slice += 1;
+         cout << "MoveSliceForward::Slice = " << _Slice << std::endl;
+         _ImageViewer->SetSlice(_Slice);
+         _ImageViewer->Render();
+      }
+   }
+ 
+   void MoveSliceBackward() {
+      if(_Slice > _MinSlice) {
+         _Slice -= 1;
+         cout << "MoveSliceBackward::Slice = " << _Slice << std::endl;
+         _ImageViewer->SetSlice(_Slice);
+         _ImageViewer->Render();
+      }
+   }
+ 
+ 
+   virtual void OnKeyDown() {
+      std::string key = this->GetInteractor()->GetKeySym();
+      if(key.compare("Up") == 0) {
+         //cout << "Up arrow key was pressed." << endl;
+         MoveSliceForward();
+      }
+      else if(key.compare("Down") == 0) {
+         //cout << "Down arrow key was pressed." << endl;
+         MoveSliceBackward();
+      }
+      // forward event
+      vtkInteractorStyleImage::OnKeyDown();
+   }
+ 
+ 
+   virtual void OnMouseWheelForward() {
+      //std::cout << "Scrolled mouse wheel forward." << std::endl;
+      MoveSliceForward();
+      // don't forward events, otherwise the image will be zoomed 
+      // in case another interactorstyle is used (e.g. trackballstyle, ...)
+      // vtkInteractorStyleImage::OnMouseWheelForward();
+   }
+ 
+ 
+   virtual void OnMouseWheelBackward() {
+      //std::cout << "Scrolled mouse wheel backward." << std::endl;
+      if(_Slice > _MinSlice) {
+         MoveSliceBackward();
+      }
+      // don't forward events, otherwise the image will be zoomed 
+      // in case another interactorstyle is used (e.g. trackballstyle, ...)
+      // vtkInteractorStyleImage::OnMouseWheelBackward();
+   }
+};
+ 
+vtkStandardNewMacro(myVtkInteractorStyleImage);
+
 // Constructor
 HeelStats::HeelStats() 
 {
   this->ui = new Ui_HeelStats;
   this->ui->setupUi(this);
- 
-  // Sphere
-  vtkSmartPointer<vtkSphereSource> sphereSource = 
-      vtkSmartPointer<vtkSphereSource>::New();
-  sphereSource->Update();
-  vtkSmartPointer<vtkPolyDataMapper> sphereMapper =
-      vtkSmartPointer<vtkPolyDataMapper>::New();
-  sphereMapper->SetInputConnection(sphereSource->GetOutputPort());
-  vtkSmartPointer<vtkActor> sphereActor = 
-      vtkSmartPointer<vtkActor>::New();
-  sphereActor->SetMapper(sphereMapper);
-  /*
-  // VTK Renderer
-  vtkSmartPointer<vtkRenderer> renderer = 
-      vtkSmartPointer<vtkRenderer>::New();
-  renderer->AddActor(sphereActor);
-    // VTK/Qt wedded
-  */
 
-  //Set Image Viewer, Interactor
+  // Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
   interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
 
@@ -57,11 +120,15 @@ HeelStats::HeelStats()
 
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer( renderer );
 
+  // Set interactor style to interactor
+  vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
+  interactor->SetInteractorStyle( interactorStyle );
 
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
   connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
+
 }
 
 void HeelStats::pushButtonClicked()
@@ -85,18 +152,6 @@ void HeelStats::openDataSet()
   reader->SetDirectoryName( fileChar );
   reader->Update();
 
-  //Visualize
-  /*
-  vtkSmartPointer<vtkRenderer> renderer = 
-      vtkSmartPointer<vtkRenderer>::New();
-
-  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
-  */
-
-
-  // Image style interactor for flipping through slices
-  // Make own class where I create one
-
 
   // Set input to ImageViewer
   imageViewer->SetInputConnection( reader->GetOutputPort() );
@@ -107,34 +162,13 @@ void HeelStats::openDataSet()
   // Add signal to interactor for flipping slices
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
 
-  //vtkSmartPointer<vtkInteractorStyleImage> interactorStyle =
-      //vtkSmartPointer<vtkInteractorStyleImage>::New();
-
-  //interactorStyle->SetImageViewer( imageViewer );
-
+  // Set interactor for ImageViewer
   imageViewer->SetupInteractor( interactor );
 
-  interactor->SetInteractorStyle( interactorStyle );
 
   // Render image
   imageViewer->Render();
-  //interactor->Start();
 
-  /*
-    // Map to volume
-  vtkSmartPointer<vtkOpenGLGPUVolumeRayCastMapper> volumeMapper;
-  volumeMapper->SetInputConnection( mi->GetOutputPort() );
-
-  // Create volume
-  vtkSmartPointer<vtkVolume> volume;
-  volume->SetMapper( volumeMapper.GetPointer() );
-
-  // Render
-  vtkSmartPointer<vtkRenderer> renderer = 
-      vtkSmartPointer<vtkRenderer>::New();
-  renderer->AddVolume( volume.GetPointer() );
-  this->ui->qvtkWidget->GetRenderWindow()->AddRenderer(renderer);
-  */
 }
 
 void HeelStats::slotExit()

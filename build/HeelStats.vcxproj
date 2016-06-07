@@ -49,35 +49,36 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\jperdomo\code\HeelStats\build\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HeelStats.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HeelStats</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\jperdomo\code\HeelStats\build\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HeelStats.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HeelStats</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\jperdomo\code\HeelStats\build\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HeelStats.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HeelStats</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\jperdomo\code\HeelStats\build\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HeelStats.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HeelStats</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\jperdomo\code\HeelStats\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HeelStats.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HeelStats</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\jperdomo\code\HeelStats\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HeelStats.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">HeelStats</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\jperdomo\code\HeelStats\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HeelStats.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">HeelStats</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\jperdomo\code\HeelStats\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HeelStats.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">HeelStats</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\D\VTK-Rel\ThirdParty\alglib;C:\D\VTK\ThirdParty\alglib;C:\D\VTK-Rel\Charts\Core;C:\D\VTK\Charts\Core;C:\D\VTK-Rel\Common\Color;C:\D\VTK\Common\Color;C:\D\VTK-Rel\Common\DataModel;C:\D\VTK\Common\DataModel;C:\D\VTK-Rel\Common\Math;C:\D\VTK\Common\Math;C:\D\VTK-Rel\Common\Core;C:\D\VTK\Common\Core;C:\D\VTK-Rel\Utilities\KWIML;C:\D\VTK\Utilities\KWIML;C:\D\VTK-Rel\Utilities\KWSys;C:\D\VTK\Utilities\KWSys;C:\D\VTK-Rel\Common\Misc;C:\D\VTK\Common\Misc;C:\D\VTK-Rel\Common\System;C:\D\VTK\Common\System;C:\D\VTK-Rel\Common\Transforms;C:\D\VTK\Common\Transforms;C:\D\VTK-Rel\Infovis\Core;C:\D\VTK\Infovis\Core;C:\D\VTK-Rel\Filters\Extraction;C:\D\VTK\Filters\Extraction;C:\D\VTK-Rel\Common\ExecutionModel;C:\D\VTK\Common\ExecutionModel;C:\D\VTK-Rel\Filters\Core;C:\D\VTK\Filters\Core;C:\D\VTK-Rel\Filters\General;C:\D\VTK\Filters\General;C:\D\VTK-Rel\Common\ComputationalGeometry;C:\D\VTK\Common\ComputationalGeometry;C:\D\VTK-Rel\Filters\Statistics;C:\D\VTK\Filters\Statistics;C:\D\VTK-Rel\Imaging\Fourier;C:\D\VTK\Imaging\Fourier;C:\D\VTK-Rel\Imaging\Core;C:\D\VTK\Imaging\Core;C:\D\VTK-Rel\Rendering\Context2D;C:\D\VTK\Rendering\Context2D;C:\D\VTK-Rel\Rendering\Core;C:\D\VTK\Rendering\Core;C:\D\VTK-Rel\Filters\Geometry;C:\D\VTK\Filters\Geometry;C:\D\VTK-Rel\Filters\Sources;C:\D\VTK\Filters\Sources;C:\D\VTK-Rel\Rendering\FreeType;C:\D\VTK\Rendering\FreeType;C:\D\VTK-Rel\ThirdParty\freetype;C:\D\VTK\ThirdParty\freetype;C:\D\VTK-Rel\ThirdParty\zlib;C:\D\VTK\ThirdParty\zlib;C:\D\VTK-Rel\Utilities\DICOMParser;C:\D\VTK\Utilities\DICOMParser;C:\D\VTK-Rel\Domains\Chemistry;C:\D\VTK\Domains\Chemistry;C:\D\VTK-Rel\IO\XML;C:\D\VTK\IO\XML;C:\D\VTK-Rel\IO\Geometry;C:\D\VTK\IO\Geometry;C:\D\VTK-Rel\IO\Core;C:\D\VTK\IO\Core;C:\D\VTK-Rel\IO\XMLParser;C:\D\VTK\IO\XMLParser;C:\D\VTK-Rel\ThirdParty\expat;C:\D\VTK\ThirdParty\expat;C:\D\VTK-Rel\Domains\ChemistryOpenGL2;C:\D\VTK\Domains\ChemistryOpenGL2;C:\D\VTK-Rel\Rendering\OpenGL2;C:\D\VTK\Rendering\OpenGL2;C:\D\VTK-Rel\Utilities\EncodeString;C:\D\VTK\Utilities\EncodeString;C:\D\VTK-Rel\ThirdParty\glew;C:\D\VTK\ThirdParty\glew;C:\D\VTK-Rel\ThirdParty\exodusII;C:\D\VTK\ThirdParty\exodusII;C:\D\VTK\ThirdParty\netcdf\vtknetcdf\include;C:\D\VTK-Rel\ThirdParty\netcdf\vtknetcdf;C:\D\VTK-Rel\ThirdParty\netcdf;C:\D\VTK\ThirdParty\netcdf;C:\D\VTK-Rel\ThirdParty\hdf5\vtkhdf5;C:\D\VTK\ThirdParty\hdf5\vtkhdf5\hl\src;C:\D\VTK\ThirdParty\hdf5\vtkhdf5\src;C:\D\VTK-Rel\ThirdParty\hdf5;C:\D\VTK\ThirdParty\hdf5;C:\D\VTK-Rel\Filters\AMR;C:\D\VTK\Filters\AMR;C:\D\VTK-Rel\Parallel\Core;C:\D\VTK\Parallel\Core;C:\D\VTK-Rel\IO\Legacy;C:\D\VTK\IO\Legacy;C:\D\VTK-Rel\Utilities\HashSource;C:\D\VTK\Utilities\HashSource;C:\D\VTK-Rel\Filters\FlowPaths;C:\D\VTK\Filters\FlowPaths;C:\D\VTK-Rel\Filters\Generic;C:\D\VTK\Filters\Generic;C:\D\VTK-Rel\Filters\Hybrid;C:\D\VTK\Filters\Hybrid;C:\D\VTK-Rel\Imaging\Sources;C:\D\VTK\Imaging\Sources;C:\D\VTK-Rel\Filters\HyperTree;C:\D\VTK\Filters\HyperTree;C:\D\VTK-Rel\Filters\Imaging;C:\D\VTK\Filters\Imaging;C:\D\VTK-Rel\Imaging\General;C:\D\VTK\Imaging\General;C:\D\VTK-Rel\Filters\Modeling;C:\D\VTK\Filters\Modeling;C:\D\VTK-Rel\Filters\Parallel;C:\D\VTK\Filters\Parallel;C:\D\VTK-Rel\Filters\ParallelImaging;C:\D\VTK\Filters\ParallelImaging;C:\D\VTK-Rel\Filters\Points;C:\D\VTK\Filters\Points;C:\D\VTK-Rel\Filters\Programmable;C:\D\VTK\Filters\Programmable;C:\D\VTK-Rel\Filters\Selection;C:\D\VTK\Filters\Selection;C:\D\VTK-Rel\Filters\SMP;C:\D\VTK\Filters\SMP;C:\D\VTK-Rel\Filters\Texture;C:\D\VTK\Filters\Texture;C:\D\VTK-Rel\Filters\Verdict;C:\D\VTK\Filters\Verdict;C:\D\VTK-Rel\ThirdParty\verdict;C:\D\VTK\ThirdParty\verdict;C:\D\VTK-Rel\Geovis\Core;C:\D\VTK\Geovis\Core;C:\D\VTK-Rel\Infovis\Layout;C:\D\VTK\Infovis\Layout;C:\D\VTK-Rel\Imaging\Hybrid;C:\D\VTK\Imaging\Hybrid;C:\D\VTK-Rel\IO\Image;C:\D\VTK\IO\Image;C:\D\VTK-Rel\Utilities\MetaIO\vtkmetaio;C:\D\VTK-Rel\Utilities\MetaIO;C:\D\VTK\Utilities\MetaIO;C:\D\VTK-Rel\ThirdParty\jpeg;C:\D\VTK\ThirdParty\jpeg;C:\D\VTK-Rel\ThirdParty\png;C:\D\VTK\ThirdParty\png;C:\D\VTK-Rel\ThirdParty\tiff;C:\D\VTK\ThirdParty\tiff;C:\D\VTK-Rel\Interaction\Style;C:\D\VTK\Interaction\Style;C:\D\VTK-Rel\Interaction\Widgets;C:\D\VTK\Interaction\Widgets;C:\D\VTK-Rel\Rendering\Annotation;C:\D\VTK\Rendering\Annotation;C:\D\VTK-Rel\Imaging\Color;C:\D\VTK\Imaging\Color;C:\D\VTK-Rel\Rendering\Volume;C:\D\VTK\Rendering\Volume;C:\D\VTK-Rel\Views\Core;C:\D\VTK\Views\Core;C:\D\VTK\ThirdParty\libproj4\vtklibproj4;C:\D\VTK-Rel\ThirdParty\libproj4\vtklibproj4;C:\D\VTK-Rel\ThirdParty\libproj4;C:\D\VTK\ThirdParty\libproj4;C:\D\VTK-Rel\ThirdParty\gl2ps;C:\D\VTK\ThirdParty\gl2ps;C:\D\VTK-Rel\GUISupport\Qt;C:\D\VTK\GUISupport\Qt;C:\D\VTK-Rel\GUISupport\QtSQL;C:\D\VTK\GUISupport\QtSQL;C:\D\VTK-Rel\IO\SQL;C:\D\VTK\IO\SQL;C:\D\VTK-Rel\ThirdParty\sqlite;C:\D\VTK\ThirdParty\sqlite;C:\D\VTK-Rel\Imaging\Math;C:\D\VTK\Imaging\Math;C:\D\VTK-Rel\Imaging\Morphological;C:\D\VTK\Imaging\Morphological;C:\D\VTK-Rel\Imaging\Statistics;C:\D\VTK\Imaging\Statistics;C:\D\VTK-Rel\Imaging\Stencil;C:\D\VTK\Imaging\Stencil;C:\D\VTK-Rel\Interaction\Image;C:\D\VTK\Interaction\Image;C:\D\VTK-Rel\IO\AMR;C:\D\VTK\IO\AMR;C:\D\VTK-Rel\IO\EnSight;C:\D\VTK\IO\EnSight;C:\D\VTK-Rel\IO\Exodus;C:\D\VTK\IO\Exodus;C:\D\VTK-Rel\IO\Export;C:\D\VTK\IO\Export;C:\D\VTK-Rel\Rendering\GL2PSOpenGL2;C:\D\VTK\Rendering\GL2PSOpenGL2;C:\D\VTK-Rel\IO\Import;C:\D\VTK\IO\Import;C:\D\VTK-Rel\IO\Infovis;C:\D\VTK\IO\Infovis;C:\D\VTK-Rel\ThirdParty\libxml2\vtklibxml2;C:\D\VTK-Rel\ThirdParty\libxml2;C:\D\VTK\ThirdParty\libxml2;C:\D\VTK-Rel\IO\LSDyna;C:\D\VTK\IO\LSDyna;C:\D\VTK-Rel\IO\MINC;C:\D\VTK\IO\MINC;C:\D\VTK-Rel\IO\Movie;C:\D\VTK\IO\Movie;C:\D\VTK-Rel\ThirdParty\oggtheora;C:\D\VTK\ThirdParty\oggtheora;C:\D\VTK-Rel\IO\NetCDF;C:\D\VTK\IO\NetCDF;C:\D\VTK-Rel\IO\Parallel;C:\D\VTK\IO\Parallel;C:\D\VTK-Rel\ThirdParty\jsoncpp;C:\D\VTK\ThirdParty\jsoncpp;C:\D\VTK-Rel\IO\ParallelXML;C:\D\VTK\IO\ParallelXML;C:\D\VTK-Rel\IO\PLY;C:\D\VTK\IO\PLY;C:\D\VTK-Rel\IO\TecplotTable;C:\D\VTK\IO\TecplotTable;C:\D\VTK-Rel\IO\Video;C:\D\VTK\IO\Video;C:\D\VTK-Rel\Rendering\ContextOpenGL2;C:\D\VTK\Rendering\ContextOpenGL2;C:\D\VTK-Rel\Rendering\Image;C:\D\VTK\Rendering\Image;C:\D\VTK-Rel\Rendering\Label;C:\D\VTK\Rendering\Label;C:\D\VTK-Rel\Rendering\LOD;C:\D\VTK\Rendering\LOD;C:\D\VTK-Rel\Rendering\Qt;C:\D\VTK\Rendering\Qt;C:\D\VTK-Rel\Rendering\VolumeOpenGL2;C:\D\VTK\Rendering\VolumeOpenGL2;C:\D\VTK-Rel\Views\Context2D;C:\D\VTK\Views\Context2D;C:\D\VTK-Rel\Views\Infovis;C:\D\VTK\Views\Infovis;C:\D\VTK-Rel\Views\Qt;C:\D\VTK\Views\Qt;C:\Qt\4.8.6\include;C:\Qt\4.8.6\include\QtGui;C:\Qt\4.8.6\include\QtCore;C:\Users\jperdomo\code\HeelStats;C:\Users\jperdomo\code\HeelStats\build;C:\D\VTK-Rel\ThirdParty\hdf5\vtkhdf5\hl\src;C:\D\VTK-Rel\ThirdParty\hdf5\vtkhdf5\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -115,7 +116,8 @@
       <ImportLibrary>C:/Users/jperdomo/code/HeelStats/build/Debug/HeelStats.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/jperdomo/code/HeelStats/build/Debug/HeelStats.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -133,7 +135,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -157,7 +160,8 @@
       <ImportLibrary>C:/Users/jperdomo/code/HeelStats/build/Release/HeelStats.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/jperdomo/code/HeelStats/build/Release/HeelStats.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -175,7 +179,8 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/Users/jperdomo/code/HeelStats/build/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -199,7 +204,8 @@
       <ImportLibrary>C:/Users/jperdomo/code/HeelStats/build/MinSizeRel/HeelStats.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/jperdomo/code/HeelStats/build/MinSizeRel/HeelStats.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -241,7 +247,8 @@
       <ImportLibrary>C:/Users/jperdomo/code/HeelStats/build/RelWithDebInfo/HeelStats.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/jperdomo/code/HeelStats/build/RelWithDebInfo/HeelStats.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -421,9 +428,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ui_HeelStats.h" />
-    <ClCompile Include="..\HeelStats.cxx"  />
-    <ClCompile Include="..\HeelStatsDriver.cxx"  />
-    <ClCompile Include="moc_HeelStats.cxx"  />
+    <ClCompile Include="..\HeelStats.cxx" />
+    <ClCompile Include="..\HeelStatsDriver.cxx" />
+    <ClCompile Include="moc_HeelStats.cxx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/jperdomo/code/HeelStats/build/ZERO_CHECK.vcxproj">

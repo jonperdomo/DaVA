@@ -20,6 +20,10 @@
 #include <vtkRenderWindowInteractor.h>
 #include <vtkInteractorStyleImage.h>
 
+#include <QPixmap>
+#include <QIcon>
+
+
 using namespace std;
 
 // Constructor
@@ -27,6 +31,12 @@ HeelStats::HeelStats()
 {
   this->ui = new Ui_HeelStats;
   this->ui->setupUi(this);
+
+  QPixmap pix( "C:/Users/jperdomo/code/HeelStats/Icons/gitAvatar.PNG" );
+  QIcon icon( pix );
+  this->setWindowIcon( icon );
+
+  //this->setWindowIcon
 
   // Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();

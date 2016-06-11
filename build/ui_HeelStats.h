@@ -119,7 +119,7 @@ public:
 
     void retranslateUi(QMainWindow *HeelStats)
     {
-        HeelStats->setWindowTitle(QApplication::translate("HeelStats", "HeelStat", 0, QApplication::UnicodeUTF8));
+        HeelStats->setWindowTitle(QApplication::translate("HeelStats", "HeelStats", 0, QApplication::UnicodeUTF8));
         actionOpen_Data_Set->setText(QApplication::translate("HeelStats", "Open Data Set", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("HeelStats", "Show Data Set", 0, QApplication::UnicodeUTF8));
         menuFile->setTitle(QApplication::translate("HeelStats", "File", 0, QApplication::UnicodeUTF8));

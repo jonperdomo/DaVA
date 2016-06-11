@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>860</width>
-    <height>604</height>
+    <width>1180</width>
+    <height>770</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,6 +42,13 @@
        </layout>
       </item>
       <item>
+       <widget class="QSlider" name="verticalSlider">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QVTKWidget" name="qvtkWidget"/>
       </item>
      </layout>
@@ -53,7 +60,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>860</width>
+     <width>1180</width>
      <height>21</height>
     </rect>
    </property>

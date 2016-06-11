@@ -7,7 +7,7 @@
 
 // Image viewer class
 #include <vtkImageViewer2.h>
-#include "vtkHeelStatsInteractor.h"
+#include <vtkInteractorStyleImage.h>
  
 // Forward Qt class declarations
 class Ui_HeelStats;
@@ -26,6 +26,8 @@ public slots:
   virtual void slotExit();
   virtual void pushButtonClicked();
   virtual void openDataSet();
+  virtual void updateImageSlice();
+  virtual void updateSlice();
 
 private:
   // Designer form
@@ -33,7 +35,7 @@ private:
 
   // Image viewer
 	vtkSmartPointer<vtkImageViewer2> imageViewer;
-	vtkSmartPointer<vtkHeelStatsInteractor> interactorStyle;
+	vtkSmartPointer<vtkInteractorStyleImage> interactorStyle;
 };
  
 #endif

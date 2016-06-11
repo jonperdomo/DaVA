@@ -427,12 +427,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="vtkHeelStatsInteractor.cxx" />
     <ClInclude Include="ui_HeelStats.h" />
     <ClCompile Include="..\HeelStats.cxx" />
     <ClCompile Include="..\HeelStatsDriver.cxx" />
     <ClCompile Include="moc_HeelStats.cxx" />
-    <ClInclude Include="vtkHeelStatsInteractor.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/jperdomo/code/HeelStats/build/ZERO_CHECK.vcxproj">

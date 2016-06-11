@@ -10,15 +10,9 @@
     <ClCompile Include="moc_HeelStats.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vtkHeelStatsInteractor.cxx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ui_HeelStats.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vtkHeelStatsInteractor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

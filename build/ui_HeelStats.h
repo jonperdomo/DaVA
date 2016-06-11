@@ -20,6 +20,7 @@
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
+#include <QtGui/QSlider>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTextEdit>
 #include <QtGui/QVBoxLayout>
@@ -39,6 +40,7 @@ public:
     QComboBox *comboBox;
     QPushButton *pushButton;
     QTextEdit *textEdit;
+    QSlider *verticalSlider;
     QVTKWidget *qvtkWidget;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -48,7 +50,7 @@ public:
     {
         if (HeelStats->objectName().isEmpty())
             HeelStats->setObjectName(QString::fromUtf8("HeelStats"));
-        HeelStats->resize(860, 604);
+        HeelStats->resize(1180, 770);
         actionOpen_Data_Set = new QAction(HeelStats);
         actionOpen_Data_Set->setObjectName(QString::fromUtf8("actionOpen_Data_Set"));
         centralwidget = new QWidget(HeelStats);
@@ -82,6 +84,12 @@ public:
 
         horizontalLayout->addLayout(verticalLayout);
 
+        verticalSlider = new QSlider(centralwidget);
+        verticalSlider->setObjectName(QString::fromUtf8("verticalSlider"));
+        verticalSlider->setOrientation(Qt::Vertical);
+
+        horizontalLayout->addWidget(verticalSlider);
+
         qvtkWidget = new QVTKWidget(centralwidget);
         qvtkWidget->setObjectName(QString::fromUtf8("qvtkWidget"));
 
@@ -93,7 +101,7 @@ public:
         HeelStats->setCentralWidget(centralwidget);
         menubar = new QMenuBar(HeelStats);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 860, 21));
+        menubar->setGeometry(QRect(0, 0, 1180, 21));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         HeelStats->setMenuBar(menubar);

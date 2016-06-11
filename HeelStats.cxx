@@ -18,10 +18,7 @@
 #include <vtkImageViewer2.h>
 #include <vtkDICOMImageReader.h>
 #include <vtkRenderWindowInteractor.h>
-#include <vtkCommand.h>
-#include <vtkObjectFactory.h>
-
-#include "vtkHeelStatsInteractor.h"
+#include <vtkInteractorStyleImage.h>
 
 using namespace std;
 
@@ -33,7 +30,7 @@ HeelStats::HeelStats()
 
   // Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
-  interactorStyle = vtkSmartPointer<vtkHeelStatsInteractor>::New();
+  interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
 
   // Add renderer
   vtkSmartPointer<vtkRenderer> renderer = 
@@ -46,16 +43,48 @@ HeelStats::HeelStats()
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
   interactor->SetInteractorStyle( interactorStyle );
 
+  // Disable slider until image is loaded
+  this->ui->verticalSlider->hide();
+
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
 
   connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
+
+  //connect(this->ui->verticalSlider, SIGNAL( sliderReleased() ), this, SLOT( updateImageSlice() ) );
+
+  connect(this->ui->verticalSlider, SIGNAL( valueChanged(int) ), this, SLOT( updateSlice() ) );
 
 }
 
 void HeelStats::pushButtonClicked()
 {
 	cout << "Hello world" << endl;
+}
+
+void HeelStats::updateImageSlice()
+{
+  int _MinSlice;
+  int _MaxSlice;
+  int _Slice;
+  if ( ! ( this->ui->verticalSlider->isHidden() ) )
+  {
+	  _MinSlice = imageViewer->GetSliceMin();
+	  _MaxSlice = imageViewer->GetSliceMax();
+	  _Slice = this->ui->verticalSlider->value();
+	  cout << "Slicer: Min = " << _MinSlice << ", Max = " << _MaxSlice << ", Current pos = " << _Slice << std::endl;
+  }
+}
+
+void HeelStats::updateSlice()
+{
+  int _Slice;
+  if ( ! ( this->ui->verticalSlider->isHidden() ) )
+  {
+	  _Slice = this->ui->verticalSlider->value();
+	  imageViewer->SetSlice( _Slice );
+	  imageViewer->Render();
+  }
 }
 
 void HeelStats::openDataSet()
@@ -81,9 +110,6 @@ void HeelStats::openDataSet()
   // Set the render window from the ImageViewer
   this->ui->qvtkWidget->SetRenderWindow( imageViewer->GetRenderWindow() );
 
-  // Set the interactor style's ImageViewer
-  interactorStyle->SetImageViewer(imageViewer);
-
   // Add signal to interactor for flipping slices
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
 
@@ -93,8 +119,10 @@ void HeelStats::openDataSet()
   // Render image
   imageViewer->Render();
 
-
-
+  // Update slider properties
+  this->ui->verticalSlider->setMinimum( imageViewer->GetSliceMin() );
+  this->ui->verticalSlider->setMaximum( imageViewer->GetSliceMax() );
+  this->ui->verticalSlider->show();
 }
 
 void HeelStats::slotExit()

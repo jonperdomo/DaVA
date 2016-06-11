@@ -22,7 +22,7 @@ static const uint qt_meta_data_HeelStats[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,13 +33,16 @@ static const uint qt_meta_data_HeelStats[] = {
       11,   10,   10,   10, 0x0a,
       22,   10,   10,   10, 0x0a,
       42,   10,   10,   10, 0x0a,
+      56,   10,   10,   10, 0x0a,
+      75,   10,   10,   10, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_HeelStats[] = {
     "HeelStats\0\0slotExit()\0pushButtonClicked()\0"
-    "openDataSet()\0"
+    "openDataSet()\0updateImageSlice()\0"
+    "updateSlice()\0"
 };
 
 void HeelStats::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -51,6 +54,8 @@ void HeelStats::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 0: _t->slotExit(); break;
         case 1: _t->pushButtonClicked(); break;
         case 2: _t->openDataSet(); break;
+        case 3: _t->updateImageSlice(); break;
+        case 4: _t->updateSlice(); break;
         default: ;
         }
     }
@@ -89,9 +94,9 @@ int HeelStats::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

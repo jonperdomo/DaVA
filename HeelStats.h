@@ -8,6 +8,8 @@
 // Image viewer class
 #include <vtkImageViewer2.h>
 #include <vtkInteractorStyleImage.h>
+
+#include <string>
  
 // Forward Qt class declarations
 class Ui_HeelStats;
@@ -34,8 +36,9 @@ private:
   Ui_HeelStats *ui;
 
   // Image viewer
-	vtkSmartPointer<vtkImageViewer2> imageViewer;
-	vtkSmartPointer<vtkInteractorStyleImage> interactorStyle;
+  vtkSmartPointer<vtkImageViewer2> imageViewer;
+  vtkSmartPointer<vtkInteractorStyleImage> interactorStyle;
+
 };
  
 #endif

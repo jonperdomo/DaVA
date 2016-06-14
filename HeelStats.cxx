@@ -10,8 +10,9 @@
 #include <vtkSphereSource.h>
 #include <vtkSmartPointer.h>
 //
-#include <string>
 #include <iostream>
+#include <sstream>
+
 #include <QFileDialog>
 #include <QString>
 //
@@ -22,17 +23,18 @@
 
 #include <QPixmap>
 #include <QIcon>
-
+#include <QStringList>
+#include  <QTableWidgetItem>
 
 using namespace std;
 
 // Constructor
-HeelStats::HeelStats() 
+HeelStats::HeelStats()
 {
   this->ui = new Ui_HeelStats;
   this->ui->setupUi(this);
 
-  QPixmap pix( "C:/Users/jperdomo/code/HeelStats/Icons/gitAvatar.PNG" );
+  QPixmap pix( "C:/Users/jperdomo/code/HeelStats/Icons/HS-Logo.PNG" );
   QIcon icon( pix );
   this->setWindowIcon( icon );
 
@@ -40,6 +42,10 @@ HeelStats::HeelStats()
 
   // Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
+
+  // Update slice orientation
+  imageViewer->SetSliceOrientationToXY();
+
   interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
 
   // Add renderer
@@ -53,8 +59,8 @@ HeelStats::HeelStats()
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
   interactor->SetInteractorStyle( interactorStyle );
 
-  // Disable slider until image is loaded
-  this->ui->verticalSlider->hide();
+  // Disable slider and table until image is loaded
+  this->ui->verticalSlider->hide();	
 
   // Signal for opening file
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
@@ -112,7 +118,7 @@ void HeelStats::openDataSet()
       vtkSmartPointer<vtkDICOMImageReader>::New();
   reader->SetDirectoryName( fileChar );
   reader->Update();
-
+  
 
   // Set input to ImageViewer
   imageViewer->SetInputConnection( reader->GetOutputPort() );
@@ -133,6 +139,45 @@ void HeelStats::openDataSet()
   this->ui->verticalSlider->setMinimum( imageViewer->GetSliceMin() );
   this->ui->verticalSlider->setMaximum( imageViewer->GetSliceMax() );
   this->ui->verticalSlider->show();
+
+  // Initialize table for displaying statistics
+  QTableWidget *statsTable = this->ui->tableWidget;
+  statsTable->setRowCount( 6 );
+  statsTable->setColumnCount( 1 );
+
+  // Create header labels
+  QStringList verticalLabels;
+  verticalLabels << "Study ID:" << "Directory:" << "Extension:" << "Width:" << "Height:" << "Pixel spacing:";
+  statsTable->setVerticalHeaderLabels( verticalLabels );
+
+  // Study ID
+  QTableWidgetItem *studyID = new QTableWidgetItem( reader->GetStudyID() );
+  statsTable->setItem( 0, 0, studyID );
+
+  // Directory
+  QTableWidgetItem *fullPath = new QTableWidgetItem( reader->GetDirectoryName() );
+  statsTable->setItem( 0, 1, fullPath );
+
+  // Extension
+  QTableWidgetItem *fileExtensions = new QTableWidgetItem( reader->GetFileExtensions() );
+  statsTable->setItem( 0, 2, fileExtensions );
+
+  // Width
+  stringstream wStream;
+  wStream << ( reader->GetWidth() );
+  std::string wString = wStream.str();
+  const char *wChar = wString.c_str();
+  QTableWidgetItem *width = new QTableWidgetItem( wChar );
+  statsTable->setItem( 0, 3, width );
+
+  // Height
+  stringstream hStream;
+  hStream << ( reader->GetHeight() );
+  std::string hString = hStream.str();
+  const char *hChar = hString.c_str();
+  QTableWidgetItem *height = new QTableWidgetItem( hChar );
+  statsTable->setItem( 0, 4, height );
+
 }
 
 void HeelStats::slotExit()

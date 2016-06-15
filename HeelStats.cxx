@@ -26,6 +26,15 @@
 #include <QStringList>
 #include  <QTableWidgetItem>
 
+// For volume
+#include <vtkImageData.h>
+#include <vtkVolumeProperty.h>
+#include <vtkMatrix4x4.h>
+#include <vtkGPUVolumeRayCastMapper.h>
+#include <vtkColorTransferFunction.h>
+#include <vtkPiecewiseFunction.h>
+#include <vtkAxesActor.h>
+
 using namespace std;
 
 // Constructor
@@ -38,14 +47,11 @@ HeelStats::HeelStats()
   QIcon icon( pix );
   this->setWindowIcon( icon );
 
-  //this->setWindowIcon
-
   // Set Image Viewer, Interactor
   imageViewer = vtkSmartPointer<vtkImageViewer2>::New();
 
   // Update slice orientation
   imageViewer->SetSliceOrientationToXY();
-
   interactorStyle = vtkSmartPointer<vtkInteractorStyleImage>::New();
 
   // Add renderer
@@ -55,20 +61,18 @@ HeelStats::HeelStats()
 
   this->ui->qvtkWidget->GetRenderWindow()->AddRenderer( renderer );
 
+  /*
   // Set interactor style to interactor
   vtkRenderWindowInteractor* interactor = this->ui->qvtkWidget->GetInteractor();
   interactor->SetInteractorStyle( interactorStyle );
+  */
 
   // Disable slider and table until image is loaded
   this->ui->verticalSlider->hide();	
 
-  // Signal for opening file
+  // Connect signals and slots
   connect(this->ui->pushButton, SIGNAL( clicked() ), this, SLOT( pushButtonClicked() ) );
-
   connect(this->ui->actionOpen_Data_Set, SIGNAL( triggered() ), this, SLOT( openDataSet() ) );
-
-  //connect(this->ui->verticalSlider, SIGNAL( sliderReleased() ), this, SLOT( updateImageSlice() ) );
-
   connect(this->ui->verticalSlider, SIGNAL( valueChanged(int) ), this, SLOT( updateSlice() ) );
 
 }
@@ -119,7 +123,7 @@ void HeelStats::openDataSet()
   reader->SetDirectoryName( fileChar );
   reader->Update();
   
-
+  /*
   // Set input to ImageViewer
   imageViewer->SetInputConnection( reader->GetOutputPort() );
 
@@ -139,6 +143,7 @@ void HeelStats::openDataSet()
   this->ui->verticalSlider->setMinimum( imageViewer->GetSliceMin() );
   this->ui->verticalSlider->setMaximum( imageViewer->GetSliceMax() );
   this->ui->verticalSlider->show();
+  */
 
   // Initialize table for displaying statistics
   QTableWidget *statsTable = this->ui->tableWidget;
@@ -178,6 +183,68 @@ void HeelStats::openDataSet()
   QTableWidgetItem *height = new QTableWidgetItem( hChar );
   statsTable->setItem( 0, 4, height );
 
+  //
+  // Volume rendering section below
+  //
+
+  // Create volume
+  vtkSmartPointer<vtkImageData> volumeData =
+      vtkSmartPointer<vtkImageData>::New();
+
+  // Copy image data
+  volumeData->DeepCopy( reader->GetOutput() );
+
+  // Ray cast data
+  vtkSmartPointer<vtkGPUVolumeRayCastMapper> volumeMapper =
+	  vtkSmartPointer<vtkGPUVolumeRayCastMapper>::New();
+  volumeMapper->SetInputData( volumeData );
+
+  vtkSmartPointer<vtkVolumeProperty> volumeProperty =
+  vtkSmartPointer<vtkVolumeProperty>::New();
+ 
+  vtkSmartPointer<vtkPiecewiseFunction> compositeOpacity =
+  vtkSmartPointer<vtkPiecewiseFunction>::New();
+  compositeOpacity->AddPoint(0.0,0.1);
+  compositeOpacity->AddPoint(80.0,0.2);
+  compositeOpacity->AddPoint(255.0,0.1);
+  volumeProperty->SetScalarOpacity(compositeOpacity);
+ 
+  vtkSmartPointer<vtkColorTransferFunction> color =
+  vtkSmartPointer<vtkColorTransferFunction>::New();
+  color->AddRGBPoint(0.0  ,0.0,0.0,1.0);
+  color->AddRGBPoint(40.0  ,1.0,0.0,0.0);
+  color->AddRGBPoint(255.0,1.0,1.0,1.0);
+  volumeProperty->SetColor(color);
+ 
+  vtkSmartPointer<vtkVolume> volume =
+  vtkSmartPointer<vtkVolume>::New();
+  volume->SetMapper(volumeMapper);
+  volume->SetProperty(volumeProperty);
+
+  // VTK Renderer
+  vtkSmartPointer<vtkRenderer> renderer = 
+      vtkSmartPointer<vtkRenderer>::New();
+  renderer->SetBackground(0.5f,0.5f,1.0f);
+
+  //vtkSmartPointer<vtkRenderWindowInteractor> iren =
+     // vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  vtkRenderWindow *renWin = this->ui->qvtkWidget->GetRenderWindow();
+
+  renWin->AddRenderer( renderer );
+  renWin->SetSize(1280,1024);
+
+  //iren->SetRenderWindow( renWin );
+
+  // Add coordinate system axes, so we have a reference for position and orientation
+  vtkSmartPointer<vtkAxesActor> axes = vtkSmartPointer<vtkAxesActor>::New();
+  axes->SetTotalLength(250,250,250);
+  axes->SetShaftTypeToCylinder();
+  axes->SetCylinderRadius(0.01);
+  renderer->AddActor(axes);
+
+  renderer->AddVolume( volume );
+  renWin->Render();
+  //iren->Start();
 }
 
 void HeelStats::slotExit()

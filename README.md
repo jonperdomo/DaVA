@@ -1,7 +1,7 @@
-# HeelStats
+# DaVA (Data Visualization and Analysis)
 Application for displaying statistical information from volume and image data. Developed with VTK and Qt for Windows. 
 
-Refer to the [HeelStats](https://heelstats.wordpress.com/) WordPress blog for periodic updates.
+Refer to the [WordPress blog](https://heelstats.wordpress.com/) for periodic updates.
 
 ## Features
 ### Interactively view DICOM image data
